@@ -1,7 +1,7 @@
-## Interface: 60200
+## Interface: 70000
 ## Title: HealPet
 ## Author: David
-## Version: 0.1
+## Version: 0.101
 
 LibStub.lua
 CallbackHandler-1.0.lua
