@@ -118,10 +118,11 @@ end
 
 --Clears pet filters so that all pets owned by the player are listed.
 function clearPetFilters()
-	C_PetJournal.AddAllPetSourcesFilter()
-	C_PetJournal.AddAllPetTypesFilter()
+	C_PetJournal.SetAllPetSourcesChecked(true)
+	C_PetJournal.SetAllPetTypesChecked(true)
 	C_PetJournal.ClearSearchFilter()
-	C_PetJournal.SetFlagFilter(LE_PET_JOURNAL_FLAG_COLLECTED, true)
+	C_PetJournal.SetFilterChecked(LE_PET_JOURNAL_FILTER_COLLECTED, true)
+	C_PetJournal.SetFilterChecked(LE_PET_JOURNAL_FILTER_NOT_COLLECTED, true)
 end
 
 function Addon.OnTooltipShow(t)
